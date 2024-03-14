@@ -23,10 +23,10 @@ describe("Robot and VirtualWarehouse Integration", () => {
     positionSensor = new VirtualPositionSensor(virtualWarehouse);
 
     robot = new Robot(
+      wallSensor,
       positionSensor,
       northSouthWheelActuator,
-      eastWestWheelActuator,
-      wallSensor
+      eastWestWheelActuator
     );
   });
 

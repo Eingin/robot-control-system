@@ -9,10 +9,10 @@ export class Robot {
   private controlUseCase: ControlUseCase;
 
   constructor(
+    wallSensor: WallSensor,
     positionSensor: PositionSensor,
     northSouthWheelActuator: WheelActuator,
-    eastWestWheelActuator: WheelActuator,
-    wallSensor: WallSensor
+    eastWestWheelActuator: WheelActuator
   ) {
     this.controlUseCase = new ControlUseCase(
       wallSensor,
