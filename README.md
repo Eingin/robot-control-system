@@ -1,10 +1,10 @@
 # Robot Control System
 
-This project is a control system for a warehouse robot. The robot can move around within it's warehouse, by sensing its position and detecting walls while being commanding by basic commands
+This project is a control system for a warehouse robot. The robot can move around within it's warehouse, by sensing its position and detecting walls around it while being commanded by basic string commands.
 
 ## The Robot
 
-The robot is a box that operates on a 2D grid. It takes commands for moving North, South, East or West in a command format that is delineated by spaces. e.g: `N E S W`
+For the exercise I visualized the robot as a box that operates on a 2D grid. It takes commands for moving North, South, East or West in a command format that is delineated by spaces. e.g: `N E S W`
 
 To visualize how these commands are executed this is how the robot is built:
 The robot has two sets of 4 wheels, one set running in the North & South direction while the other set runs East & West. This is how it moves around.
@@ -46,7 +46,7 @@ This will create a virtual warehouse and a robot that you can then input command
 
 ## Project Structure
 
-The project is structured as follows:
+The project is structured in a clean architecture way and is broken down as follows:
 
 - `robot/`: This directory contains all of the the Robot's implementation.
   - `index.ts`: This is the main file for the Robot class.
