@@ -17,10 +17,10 @@ async function Testbed() {
   const positionSensor = new VirtualPositionSensor(warehouse);
 
   const robot = new Robot(
+    wallSensor,
     positionSensor,
     northSouthActuator,
-    eastWestActuator,
-    wallSensor
+    eastWestActuator
   );
 
   prompt.start({ message: "Enter command" });
